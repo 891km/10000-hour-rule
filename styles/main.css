@@ -8,18 +8,18 @@
 }
 
 @font-face {
-  font-family: "GmarketSansBold";
+  font-family: "GmarketSans";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
     format("woff");
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "GmarketSansMedium";
+  font-family: "GmarketSans";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
     format("woff");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -40,6 +40,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  font-family: "GmarketSans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 html {
@@ -47,9 +52,247 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  background-color: #5b2386;
+  color: #fff;
+}
+
+header,
+main,
+footer {
+  width: 100%;
 }
 
 /* utils */
+.ally-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+}
 
-/*  */
+img {
+  vertical-align: bottom;
+}
+
+/* temp */
+/* body * {
+  border: 1px solid salmon;
+} */
+
+/* header */
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5.2rem;
+
+  padding-top: 12rem;
+  margin-bottom: 8rem;
+}
+
+header .title-container {
+  width: 56.4rem;
+  height: 26.5rem;
+  position: relative;
+}
+
+header .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header .title.main {
+  width: 100%;
+}
+
+header .title.sub {
+  width: 22rem;
+  height: auto;
+  opacity: 0.15;
+}
+
+header p {
+  font-family: "OTEnjoystoriesBA";
+  color: #f5df4d;
+  text-align: center;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* text-quote */
+.text-quote {
+  text-align: center;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: normal;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  margin-bottom: 10rem;
+}
+
+.text-quote::before,
+.text-quote::after {
+  content: "";
+  width: 3.6rem;
+  height: 3.2rem;
+  display: inline-block;
+}
+
+.text-quote::before {
+  background: url("../images/quote-left.svg") no-repeat center / cover;
+}
+
+.text-quote::after {
+  background: url("../images/quote-right.svg") no-repeat center / cover;
+}
+
+.text-quote .strong {
+  font-family: "GmarketSans";
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: normal;
+}
+
+/* form-input */
+.form-input {
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: normal;
+}
+
+.form-input .input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  margin-bottom: 10rem;
+}
+
+.input-container p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+}
+
+.input-container input {
+  background: #fff;
+  width: 22.8rem;
+  height: 5.6rem;
+  border-radius: 0.8rem;
+  padding: 1.6rem 4rem;
+  margin: 0 2rem;
+
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.input-container input::placeholder {
+  color: #babcbe;
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1;
+}
+
+.btn {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1;
+
+  padding: 2rem 5rem;
+  border-radius: 12px;
+  box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn.submit {
+  color: #5b2386;
+  background-color: #fcee21;
+
+  margin-bottom: 14.2rem;
+}
+
+.btn:hover {
+  cursor: url("../images/click.png") 0 0, pointer;
+}
+
+/* form-output */
+.form-output {
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 1;
+
+  margin-bottom: 12rem;
+}
+
+.form-output p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-output .output {
+  font-size: 7.2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0 1.2rem;
+}
+
+/* btn-container */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+
+  list-style: none;
+  margin-bottom: 14.2rem;
+}
+
+.btn.go {
+  color: #5b2386;
+  background-color: #fcee21;
+}
+
+.btn.share {
+  color: #5b2386;
+  background-color: #fff;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  font-family: "Noto Sans KR";
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: normal;
+
+  padding-bottom: 10.6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+footer img {
+  width: 16.8rem;
+}
