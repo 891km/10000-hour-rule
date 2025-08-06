@@ -35,6 +35,11 @@
       format("opentype");
 }
 
+:root {
+  --purple: #5b2386;
+  --yellow: #fcee21;
+}
+
 /* base */
 * {
   margin: 0;
@@ -53,7 +58,7 @@ html {
 
 body {
   font-size: 1.4rem;
-  background-color: #5b2386;
+  background-color: var(--purple);
   color: #fff;
 }
 
@@ -78,11 +83,6 @@ footer {
 img {
   vertical-align: bottom;
 }
-
-/* temp */
-/* body * {
-  border: 1px solid salmon;
-} */
 
 /* header */
 header {
@@ -224,8 +224,8 @@ header p {
 }
 
 .btn.submit {
-  color: #5b2386;
-  background-color: #fcee21;
+  color: var(--purple);
+  background-color: var(--yellow);
 
   margin-bottom: 14.2rem;
 }
@@ -267,12 +267,12 @@ header p {
 }
 
 .btn.go {
-  color: #5b2386;
-  background-color: #fcee21;
+  color: var(--purple);
+  background-color: var(--yellow);
 }
 
 .btn.share {
-  color: #5b2386;
+  color: var(--purple);
   background-color: #fff;
 }
 
