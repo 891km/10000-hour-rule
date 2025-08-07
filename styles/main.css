@@ -88,6 +88,17 @@ img {
   vertical-align: bottom;
 }
 
+/* focus style */
+input:focus {
+  outline: 3px solid #ff0f99;
+  outline-offset: 0.1rem;
+}
+
+:is(button, a):focus-visible {
+  outline: 3px solid #ff0f99;
+  outline-offset: 0.1rem;
+}
+
 /* header */
 header {
   width: 100%;
@@ -132,23 +143,23 @@ header p {
   margin-bottom: 10rem;
 }
 
-.text-quote::before,
-.text-quote::after {
+.text-desc::before,
+.text-desc::after {
   content: "";
   width: 3.6rem;
   height: 3.2rem;
   display: inline-block;
 }
 
-.text-quote::before {
+.text-desc::before {
   background: url("../images/quote-left.svg") no-repeat center / cover;
 }
 
-.text-quote::after {
+.text-desc::after {
   background: url("../images/quote-right.svg") no-repeat center / cover;
 }
 
-.text-quote .strong {
+.text-desc .strong {
   font-family: "GmarketSans";
   font-weight: 700;
   font-size: 2.4rem;
