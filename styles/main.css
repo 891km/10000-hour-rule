@@ -182,14 +182,15 @@ header p {
 .goal-input .input-container {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 2rem 0;
 
   margin-bottom: 10rem;
 }
 
 .input-container p {
-  border: 1px solid red;
   flex: 0 1 auto;
 
   display: flex;
@@ -202,9 +203,9 @@ header p {
   flex: 1 1 100%;
 }
 
-.input-container p:nth-child(2) {
+/* .input-container p:nth-child(2) {
   margin: 1.2rem 0;
-}
+} */
 
 .input-container input {
   background: #fff;
