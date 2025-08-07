@@ -102,6 +102,51 @@ header p {
   margin-bottom: 14.2rem;
 }
 
+/* modal */
+.modal {
+  width: 33rem;
+  padding: 4rem 4.2rem;
+}
+
+.modal .modal-title {
+  font-size: 6.4rem;
+  margin-bottom: 0;
+}
+
+.modal .modal-title.desktop {
+  display: none;
+}
+
+.modal .modal-title.mobile {
+  display: block;
+}
+
+.modal .modal-desc {
+  margin-bottom: 2.4rem;
+}
+
+.modal .modal-img {
+  width: 24rem;
+  object-fit: contain;
+  margin-bottom: 2.4rem;
+}
+
+.btn.modal-go {
+  white-space: normal;
+  line-height: 1.2;
+  padding: 2rem 5rem;
+}
+
+#btn-close-modal {
+  position: absolute;
+  right: 1.4rem;
+  top: 1.4rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  background: url("../images/button-x.svg") no-repeat center / cover;
+  opacity: 0.25;
+}
+
 /* footer */
 footer {
   font-size: 0.9rem;

@@ -296,6 +296,7 @@ header p {
   background-color: #fff;
 }
 
+/* modal */
 .modal {
   width: 80rem;
   padding: 8rem 14.6rem;
@@ -326,6 +327,14 @@ header p {
   margin-bottom: 0.4rem;
 }
 
+.modal .modal-title.desktop {
+  display: block;
+}
+
+.modal .modal-title.mobile {
+  display: none;
+}
+
 .modal .modal-desc {
   font-size: 3.6rem;
   margin-bottom: 4rem;
@@ -350,6 +359,7 @@ header p {
   top: 2rem;
   width: 4rem;
   height: 4rem;
+  border-radius: 8px;
   background: url("../images/button-x.svg") no-repeat center / cover;
   opacity: 0.25;
 }
