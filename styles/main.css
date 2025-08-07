@@ -241,11 +241,24 @@ header p {
   color: var(--purple);
   background-color: var(--yellow);
 
+  position: relative;
+
   margin-bottom: 14.2rem;
 }
 
+.btn.submit::after {
+  content: "";
+  display: inline-block;
+  width: 6.4rem;
+  height: 7.2rem;
+
+  position: absolute;
+  left: calc(100% + 0.7rem);
+  background: url("../images/click.svg") no-repeat center / contain;
+}
+
 .btn:hover {
-  cursor: url("../images/click.png") 0 0, pointer;
+  cursor: url("../images/click.svg") 0 0, pointer;
 }
 
 /* goal-output */
