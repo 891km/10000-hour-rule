@@ -60,11 +60,6 @@ body {
   font-size: 1.4rem;
   background-color: var(--purple);
   color: #fff;
-
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
 }
 
 header,
@@ -229,13 +224,11 @@ header p {
   text-align: center;
   font-size: 2.4rem;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.2;
 
   padding: 2rem 5rem;
   border-radius: 12px;
   box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.15);
-
-  white-space: nowrap;
 }
 
 .btn.submit {

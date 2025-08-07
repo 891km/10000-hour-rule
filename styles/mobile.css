@@ -67,8 +67,6 @@ header p {
 .btn.submit {
   padding: 2rem 3.8rem;
   width: 24rem;
-  white-space: normal;
-  line-height: 1.2;
   margin-bottom: 6.8rem;
 }
 
@@ -99,7 +97,7 @@ header p {
   gap: 0.8rem;
 
   list-style: none;
-  margin-bottom: 14.2rem;
+  margin-bottom: 6rem;
 }
 
 /* modal */
@@ -132,8 +130,6 @@ header p {
 }
 
 .btn.modal-go {
-  white-space: normal;
-  line-height: 1.2;
   padding: 2rem 5rem;
 }
 
