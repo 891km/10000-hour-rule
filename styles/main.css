@@ -225,6 +225,7 @@ header p {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 1.2;
+  word-break: keep-all;
 
   padding: 2rem 5rem;
   border-radius: 12px;
@@ -305,7 +306,7 @@ header p {
 
 /* modal */
 .modal {
-  width: 80rem;
+  /* width: 80rem; */
   padding: 8rem 14.6rem;
   text-align: center;
 
@@ -348,12 +349,13 @@ header p {
 }
 
 .modal .modal-img {
-  width: 43.8rem;
+  width: clamp(24rem, 80%, 43.6rem);
   object-fit: contain;
   margin-bottom: 6rem;
 }
 
 .btn.modal-go {
+  width: 100%;
   display: block;
   text-decoration: none;
   background-color: var(--yellow);
