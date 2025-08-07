@@ -12,6 +12,11 @@
     <link
       rel="stylesheet"
       href="./styles/mobile.css"
+      media="screen and (max-width: 768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/mobile.css"
       media="screen and (max-width: 767px)"
     />
     <link rel="icon" href="./images/favicon.ico" />
@@ -44,21 +49,27 @@
         <h2 class="ally-hidden">훈련 목표 설정</h2>
         <form action="#" method="get">
           <div class="input-container">
+            <!-- !!질문 : p 태그랑 label 태그를 같이 써도 되는지 -->
             <p>
-              나는<input
-                type="text"
-                name="goal"
-                placeholder="예)프로그래밍"
-                required
-              />전문가가 될 것이다.
+              <label>
+                나는<input
+                  type="text"
+                  name="goal"
+                  placeholder="예)프로그래밍"
+                  required
+                />전문가가 될 것이다.
+              </label>
             </p>
+            <p>그래서 앞으로 매일 하루에</p>
             <p>
-              그래서 앞으로 매일 하루에<input
-                type="number"
-                name="hour"
-                placeholder="예)5시간"
-                required
-              />시간씩 훈련할 것이다.
+              <label>
+                <input
+                  type="number"
+                  name="hour"
+                  placeholder="예)5시간"
+                  required
+                />시간씩 훈련할 것이다.
+              </label>
             </p>
           </div>
           <button type="submit" class="btn submit">
@@ -70,12 +81,10 @@
       <section class="goal-output">
         <h2 class="ally-hidden">훈련 목표에 따른 훈련 시간 계산 결과</h2>
         <p>
-          당신은 <span class="output goal">프로그래밍</span> 전문가가 되기
-          위해서
+          당신은<span class="output goal">프로그래밍</span>전문가가 되기 위해서
         </p>
         <p>
-          대략 <span class="output hour">5110</span> 일 이상 훈련하셔야 합니다!
-          :)
+          대략<span class="output hour">5110</span>일 이상 훈련하셔야 합니다! :)
         </p>
       </section>
 
@@ -93,7 +102,7 @@
         </ul>
       </section>
 
-      <dialog open class="modal" id="modal">
+      <dialog class="modal" id="modal">
         <h3 class="ally-hidden">훈련하러 가기 모달창</h3>
         <p class="modal-title">화이팅!!♥♥♥</p>
         <p class="modal-desc">당신의 꿈을 응원합니다!</p>

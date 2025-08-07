@@ -60,12 +60,18 @@ body {
   font-size: 1.4rem;
   background-color: var(--purple);
   color: #fff;
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
 }
 
 header,
 main,
 footer {
-  width: 100%;
+  width: calc(100% - 30px);
+  margin: 0 auto;
 }
 
 body p {
@@ -175,17 +181,25 @@ header p {
 
 .goal-input .input-container {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
   margin-bottom: 10rem;
 }
 
 .input-container p {
+  flex: 0 0 auto;
+
   display: flex;
   justify-content: center;
   align-items: center;
   line-height: 1;
+}
+
+.input-container p:nth-child(1) {
+  flex: 1 1 100%;
+  margin-bottom: 2rem;
 }
 
 .input-container input {
@@ -239,6 +253,12 @@ header p {
   text-align: center;
   font-size: 2.4rem;
   line-height: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 
   margin-bottom: 12rem;
 }
