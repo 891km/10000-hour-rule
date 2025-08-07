@@ -203,10 +203,6 @@ header p {
   flex: 1 1 100%;
 }
 
-/* .input-container p:nth-child(2) {
-  margin: 1.2rem 0;
-} */
-
 .input-container input {
   background: #fff;
   width: 22.8rem;
