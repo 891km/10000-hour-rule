@@ -97,27 +97,9 @@ header {
   margin-bottom: 8rem;
 }
 
-header .title-container {
-  width: 56.4rem;
-  height: 26.5rem;
-  position: relative;
-}
-
 header .title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-header .title.main {
-  width: 100%;
-}
-
-header .title.sub {
-  width: 22rem;
-  height: auto;
-  opacity: 0.15;
+  width: 56.4rem;
+  object-fit: contain;
 }
 
 header p {
@@ -129,8 +111,9 @@ header p {
   line-height: 1;
 }
 
-/* text-quote */
-.text-quote {
+/* main */
+/* text-desc */
+.text-desc {
   text-align: center;
   color: #fff;
   font-size: 1.8rem;
@@ -168,14 +151,14 @@ header p {
   line-height: normal;
 }
 
-/* form-input */
-.form-input {
+/* goal-input */
+.goal-input {
   text-align: center;
   font-size: 2.4rem;
   line-height: normal;
 }
 
-.form-input .input-container {
+.goal-input .input-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -234,8 +217,8 @@ header p {
   cursor: url("../images/click.png") 0 0, pointer;
 }
 
-/* form-output */
-.form-output {
+/* goal-output */
+.goal-output {
   text-align: center;
   font-size: 2.4rem;
   line-height: 1;
@@ -243,13 +226,13 @@ header p {
   margin-bottom: 12rem;
 }
 
-.form-output p {
+.goal-output p {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.form-output .output {
+.goal-output .output {
   font-size: 7.2rem;
   font-weight: 700;
   line-height: 1;
@@ -257,7 +240,7 @@ header p {
 }
 
 /* btn-container */
-.btn-container {
+.btn-container ul {
   display: flex;
   justify-content: center;
   gap: 1.2rem;
@@ -275,6 +258,9 @@ header p {
   color: var(--purple);
   background-color: #fff;
 }
+
+/* dialog {
+} */
 
 /* footer */
 footer {
