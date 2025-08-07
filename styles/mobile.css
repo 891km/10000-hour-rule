@@ -1,7 +1,3 @@
-body p {
-  /* white-space: nowrap; */
-}
-
 /* header */
 header {
   gap: 3.2rem;
@@ -25,6 +21,7 @@ header p {
   line-height: 200%;
 
   margin-bottom: 6rem;
+  gap: 1rem;
 }
 
 .text-desc::before,
@@ -44,13 +41,8 @@ header p {
 
 .goal-input .input-container {
   flex-direction: column;
-  gap: 1.2rem;
 
   margin-bottom: 8rem;
-}
-
-.input-container p:nth-child(1) {
-  margin-bottom: 0;
 }
 
 .input-container input {
