@@ -159,9 +159,15 @@ header p {
 .text-desc::before,
 .text-desc::after {
   content: "";
-  width: clamp(2rem, 3vw, 3.6rem);
-  aspect-ratio: 3.6 / 3.2;
   display: inline-block;
+  width: clamp(2rem, 3vw, 3.6rem);
+
+  aspect-ratio: 3.6 / 3.2;
+
+  /* fallback for aspect-ratio */
+  height: 0;
+  padding-top: calc(clamp(2rem, 3vw, 3.6rem) * 3.6 / 3.2);
+  object-fit: cover;
 }
 
 .text-desc::before {
@@ -252,8 +258,13 @@ header p {
 .btn.submit::after {
   content: "";
   display: inline-block;
-  width: clamp(4.3rem, 5vw, 6.4rem);
+  width: clamp(4.3rem, 6vw, 6.4rem);
   aspect-ratio: 6.4 / 7.2;
+
+  /* fallback for aspect-ratio */
+  height: 0;
+  padding-top: calc(clamp(4.3rem, 6vw, 6.4rem) * 6.4 / 7.2);
+  object-fit: cover;
 
   position: absolute;
   left: calc(100% + 0.7rem);
