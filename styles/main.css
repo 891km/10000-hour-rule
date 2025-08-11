@@ -1,5 +1,21 @@
 /* font */
-@import url("https://cdn.jsdelivr.net/gh/leetaewook/gmarket-sans-dynamic-subset/GmarketSans.css");
+@font-face {
+  font-family: "GmarketSans";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GmarketSans";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
   font-family: "OTEnjoystoriesBA";
@@ -49,7 +65,7 @@ body {
   background-color: var(--purple);
   color: #fff;
 
-  font-family: "Gmarket Sans";
+  font-family: "GmarketSans";
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -195,7 +211,7 @@ header p {
   padding: 1.6rem 4rem;
   margin: 0 2rem;
 
-  font-family: "Gmarket Sans";
+  font-family: "GmarketSans";
   font-size: var(--fs-body-md-fluid);
   font-weight: 700;
   text-align: center;
@@ -205,7 +221,7 @@ header p {
 .input-container input::placeholder {
   color: #babcbe;
   font-size: var(--fs-body-md-fluid);
-  font-family: "Gmarket Sans";
+  font-family: "GmarketSans";
   font-weight: 400;
   text-align: center;
   line-height: 1;
@@ -213,7 +229,7 @@ header p {
 
 .btn {
   text-align: center;
-  font-family: "Gmarket Sans";
+  font-family: "GmarketSans";
   font-size: var(--fs-body-md-fluid);
   font-weight: 700;
   line-height: 1.2;
