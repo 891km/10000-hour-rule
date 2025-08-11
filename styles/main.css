@@ -100,9 +100,10 @@ img {
   vertical-align: bottom;
 }
 
-/* focus style */
+/* button & focus style */
 input:focus,
-:is(button, a):focus-visible {
+:is(button, a):focus-visible,
+.btn:hover {
   outline: 3px solid #ff0f99;
   outline-offset: 0.1rem;
 }
@@ -211,6 +212,7 @@ header p {
   padding: 1.6rem 4rem;
   margin: 0 2rem;
 
+  font-family: "GmarketSans";
   font-size: var(--fs-body-md-fluid);
   font-weight: 700;
   text-align: center;
@@ -313,8 +315,7 @@ header p {
 
 /* modal */
 .modal {
-  /* width: 80rem; */
-  padding: 8rem 14.6rem;
+  padding: clamp(4rem, 8vw, 8rem) clamp(4.2rem, 12vw, 14.6rem);
   text-align: center;
 
   border: none;
@@ -326,6 +327,8 @@ header p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  overflow: hidden;
 }
 
 .modal p {
@@ -361,28 +364,13 @@ header p {
   margin-bottom: 6rem;
 }
 
-.btn.modal-go {
+.modal .btn.modal-go {
   width: 100%;
   display: block;
   text-decoration: none;
   background-color: var(--yellow);
   color: var(--purple);
-}
-
-#btn-close-modal {
-  position: absolute;
-  right: 2rem;
-  top: 2rem;
-  width: 4rem;
-  height: 4rem;
-  border-radius: 8px;
-  background: url("../images/button-x.svg") no-repeat center / cover;
-  opacity: 0.25;
-}
-
-#btn-close-modal:hover {
-  opacity: 1;
-  cursor: pointer;
+  white-space: nowrap;
 }
 
 /* footer */
