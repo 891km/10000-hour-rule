@@ -251,8 +251,8 @@ header p {
 .btn.submit::after {
   content: "";
   display: inline-block;
-  width: 6.4rem;
-  height: 7.2rem;
+  width: clamp(4.3rem, 5vw, 6.4rem);
+  aspect-ratio: 6.4 / 7.2;
 
   position: absolute;
   left: calc(100% + 0.7rem);
