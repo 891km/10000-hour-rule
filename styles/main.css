@@ -5,6 +5,7 @@
     format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -13,6 +14,7 @@
     format("woff");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -21,6 +23,7 @@
     format("woff");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -33,6 +36,7 @@
       format("woff"),
     url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf")
       format("opentype");
+  font-display: swap;
 }
 
 :root {
@@ -100,7 +104,7 @@ input:focus,
 :is(button, a):focus-visible,
 .btn:hover {
   outline: 3px solid #ff0f99;
-  outline-offset: 0.1rem;
+  outline-offset: 1px;
 }
 
 /* header */
