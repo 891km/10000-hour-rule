@@ -38,6 +38,11 @@
 :root {
   --purple: #5b2386;
   --yellow: #fcee21;
+
+  /* font-size */
+  --fs-body-lg-fluid: clamp(2.2rem, 3vw, 3.6rem);
+  --fs-body-md-fluid: clamp(1.4rem, 2.4vw, 2.4rem);
+  --fs-body-sm-fluid: clamp(1.2rem, 2.4vw, 2.4rem);
 }
 
 /* base */
@@ -45,11 +50,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  font-family: "GmarketSans";
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 html {
@@ -57,15 +57,26 @@ html {
 }
 
 body {
-  font-size: 1.4rem;
+  font-size: var(--fs-body-md-fluid);
   background-color: var(--purple);
   color: #fff;
+
+  font-family: "GmarketSans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
+
+/* temp */
+/* body * {
+  border: 1px solid red;
+} */
 
 header,
 main,
 footer {
-  width: calc(100% - 30px);
+  width: 100%;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -90,11 +101,7 @@ img {
 }
 
 /* focus style */
-input:focus {
-  outline: 3px solid #ff0f99;
-  outline-offset: 0.1rem;
-}
-
+input:focus,
 :is(button, a):focus-visible {
   outline: 3px solid #ff0f99;
   outline-offset: 0.1rem;
@@ -102,7 +109,6 @@ input:focus {
 
 /* header */
 header {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,7 +120,7 @@ header {
 }
 
 header .title {
-  width: 56.4rem;
+  width: clamp(27.8rem, 50vw, 56.4rem);
   object-fit: contain;
 }
 
@@ -122,7 +128,7 @@ header p {
   font-family: "OTEnjoystoriesBA";
   color: #f5df4d;
   text-align: center;
-  font-size: 3.6rem;
+  font-size: var(--fs-body-lg-fluid);
   font-weight: 400;
   line-height: 1;
 }
@@ -132,7 +138,7 @@ header p {
 .text-desc {
   text-align: center;
   color: #fff;
-  font-size: 1.8rem;
+  font-size: clamp(1.4rem, 1.8vw, 1.8rem);
   font-weight: 400;
   line-height: normal;
 
@@ -144,33 +150,32 @@ header p {
   margin-bottom: 10rem;
 }
 
+.text-desc .strong {
+  font-size: clamp(1.4rem, 2.4vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1;
+}
+
 .text-desc::before,
 .text-desc::after {
   content: "";
-  width: 3.6rem;
-  height: 3.2rem;
+  width: clamp(2rem, 3vw, 3.6rem);
+  aspect-ratio: 3.6 / 3.2;
   display: inline-block;
 }
 
 .text-desc::before {
-  background: url("../images/quote-left.svg") no-repeat center / cover;
+  background: url("../images/quote-left.svg") no-repeat center / contain;
 }
 
 .text-desc::after {
-  background: url("../images/quote-right.svg") no-repeat center / cover;
-}
-
-.text-desc .strong {
-  font-family: "GmarketSans";
-  font-weight: 700;
-  font-size: 2.4rem;
-  line-height: normal;
+  background: url("../images/quote-right.svg") no-repeat center / contain;
 }
 
 /* goal-input */
 .goal-input {
   text-align: center;
-  font-size: 2.4rem;
+  font-size: var(--fs-body-md-fluid);
   line-height: normal;
 }
 
@@ -206,7 +211,7 @@ header p {
   padding: 1.6rem 4rem;
   margin: 0 2rem;
 
-  font-size: 2.4rem;
+  font-size: var(--fs-body-md-fluid);
   font-weight: 700;
   text-align: center;
   vertical-align: middle;
@@ -214,7 +219,8 @@ header p {
 
 .input-container input::placeholder {
   color: #babcbe;
-  font-size: 2.4rem;
+  font-size: var(--fs-body-md-fluid);
+  font-family: "GmarketSans";
   font-weight: 400;
   text-align: center;
   line-height: 1;
@@ -222,7 +228,8 @@ header p {
 
 .btn {
   text-align: center;
-  font-size: 2.4rem;
+  font-family: "GmarketSans";
+  font-size: var(--fs-body-md-fluid);
   font-weight: 700;
   line-height: 1.2;
   word-break: keep-all;
@@ -259,7 +266,7 @@ header p {
 /* goal-output */
 .goal-output {
   text-align: center;
-  font-size: 2.4rem;
+  font-size: var(--fs-body-sm-fluid);
   line-height: 1;
 
   display: flex;
@@ -278,7 +285,7 @@ header p {
 }
 
 .goal-output .output {
-  font-size: 7.2rem;
+  font-size: clamp(2.4rem, 5vw, 7.2rem);
   font-weight: 700;
   line-height: 1;
   margin: 0 1.2rem;
@@ -331,7 +338,7 @@ header p {
 }
 
 .modal .modal-title {
-  font-size: 9.6rem;
+  font-size: clamp(6.4rem, 8vw, 9.6rem);
   margin-bottom: 0.4rem;
 }
 
@@ -382,7 +389,7 @@ header p {
 footer {
   text-align: center;
   font-family: "Noto Sans KR";
-  font-size: 1.2rem;
+  font-size: clamp(0.9rem, 1.2vw, 1.2rem);
   font-weight: 400;
   line-height: normal;
 
