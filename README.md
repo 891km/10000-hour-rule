@@ -141,7 +141,7 @@
 #### 2-1. 문제 정의
 
 - 버튼 오른쪽 바깥에 클릭 이미지를 배치해야 했습니다.
-- ![오른쪽 바깥에 클릭 이미지가 위치한 버튼](https://github.com/user-attachments/assets/048b8207-40cd-481f-ba57-4fce2acc19c1)
+  ![오른쪽 바깥에 클릭 이미지가 위치한 버튼](https://github.com/user-attachments/assets/048b8207-40cd-481f-ba57-4fce2acc19c1)
 
 #### 2-2. 문제 해결
 
