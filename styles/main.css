@@ -107,6 +107,10 @@ input:focus,
   outline-offset: 1px;
 }
 
+.btn:hover {
+  cursor: url("../images/click.svg") 0 0, pointer;
+}
+
 /* header */
 header {
   display: flex;
@@ -269,10 +273,6 @@ header p {
   position: absolute;
   left: calc(100% + 0.7rem);
   background: url("../images/click.svg") no-repeat center / contain;
-}
-
-.btn:hover {
-  cursor: url("../images/click.svg") 0 0, pointer;
 }
 
 /* goal-output */
