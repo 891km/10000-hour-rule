@@ -9,7 +9,6 @@ header {
 /* .text-desc */
 .text-desc {
   line-height: 200%;
-
   margin-bottom: 6rem;
   gap: 1rem;
 }
@@ -18,7 +17,6 @@ header {
 .goal-input .input-container {
   flex-direction: column;
   gap: 1.2rem 0;
-
   margin-bottom: 8rem;
 }
 
@@ -35,7 +33,6 @@ header {
 
 .btn.submit {
   width: clamp(24rem, 50%, 56.7rem);
-
   padding: 2rem 3.8rem;
   margin-bottom: 6.8rem;
 }
@@ -47,7 +44,6 @@ header {
 /* goal-output */
 .goal-output {
   gap: 1.6rem;
-
   margin-bottom: 5.2rem;
 }
 
