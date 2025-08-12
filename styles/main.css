@@ -215,7 +215,8 @@ header p {
 
 .input-container input {
   background: #fff;
-  width: 22.8rem;
+  width: auto;
+  max-width: 22.8rem;
   height: 5.6rem;
   border-radius: 0.8rem;
   padding: 1.6rem 4rem;
