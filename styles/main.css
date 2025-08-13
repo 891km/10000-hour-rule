@@ -125,6 +125,8 @@ header {
 
 header .title {
   width: clamp(27.8rem, 50vw, 56.4rem);
+  height: auto;
+  aspect-ratio: 564 / 265;
   object-fit: contain;
 }
 
