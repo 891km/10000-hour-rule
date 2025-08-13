@@ -6,6 +6,7 @@
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+  ascent-override: 100%;
 }
 
 @font-face {
@@ -15,6 +16,7 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+  ascent-override: 100%;
 }
 
 @font-face {
@@ -24,6 +26,7 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+  ascent-override: 100%;
 }
 
 @font-face {
@@ -37,6 +40,7 @@
     url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf")
       format("opentype");
   font-display: swap;
+  ascent-override: 100%;
 }
 
 :root {
