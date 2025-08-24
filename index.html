@@ -54,6 +54,7 @@
       media="screen and (max-width: 768px)"
     />
     <link rel="icon" href="./images/favicon.ico" />
+    <script src="./js/index.js" defer></script>
     <title>1만 시간의 법칙</title>
   </head>
   <body>
@@ -87,30 +88,32 @@
             <p>
               나는
               <input
-                id="goal"
+                id="input-goal"
                 type="text"
                 name="goal"
                 placeholder="예)프로그래밍"
                 required
               />
-              <label for="goal" class="ally-hidden"> 목표 분야 </label>
+              <label for="input-goal" class="ally-hidden"> 목표 분야 </label>
               전문가가 될 것이다.
             </p>
             <p>그래서 앞으로 매일 하루에</p>
             <p>
               <input
-                id="hour"
+                id="input-hour"
                 type="number"
                 name="hour"
                 inputmode="numeric"
                 placeholder="예)5시간"
                 required
               />
-              <label for="hour" class="ally-hidden"> 목표 훈련 시간 </label>
+              <label for="input-hour" class="ally-hidden">
+                목표 훈련 시간
+              </label>
               시간씩 훈련할 것이다.
             </p>
           </div>
-          <button type="submit" class="btn submit">
+          <button type="submit" class="btn submit" id="submit-btn">
             나는 며칠 동안 훈련을 해야 1만 시간이 될까?
           </button>
         </form>
@@ -119,10 +122,12 @@
       <section class="goal-output">
         <h2 class="ally-hidden">훈련 목표에 따른 훈련 시간 계산 결과</h2>
         <p>
-          당신은<span class="output goal">프로그래밍</span>전문가가 되기 위해서
+          당신은<span class="output" id="output-goal">목표 분야</span>전문가가
+          되기 위해서
         </p>
         <p>
-          대략<span class="output hour">5110</span>일 이상 훈련하셔야 합니다! :)
+          대략<span class="output" id="output-hour">000</span>일 이상 훈련하셔야
+          합니다! :)
         </p>
       </section>
 

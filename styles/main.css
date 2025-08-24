@@ -295,6 +295,7 @@ header p {
   gap: 2rem;
 
   margin-bottom: 12rem;
+  /* display: none; */
 }
 
 .goal-output p {
@@ -304,10 +305,15 @@ header p {
 }
 
 .goal-output .output {
-  font-size: clamp(2.4rem, 5vw, 7.2rem);
   font-weight: 700;
   line-height: 1;
   margin: 0 1.2rem;
+  opacity: 0.3;
+}
+
+.goal-output .output.entered {
+  font-size: clamp(2.4rem, 5vw, 7.2rem);
+  opacity: 1;
 }
 
 /* btn-container */
